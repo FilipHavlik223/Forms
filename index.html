@@ -12,21 +12,47 @@
 
 <form action="index.html" method="post">
     <label for="textinput">text</label>
-    <input type="text" name="text" id="textinput">
+    <input type="text" name="text" id="textinput"
+           required
+           maxlength="10" minlength="1">
+<br>
+    <input type="email" placeholder="neco@gmail.com">
+
+
+    <br>
+    <label for="textarea1">TextArea</label>
+    <textarea id="textarea1" name="textarea">sem piš</textarea>
+
+
+    <select name="select">
+        <option value="1">volba 1</option>
+        <option>volba 2</option>
+        <option>volba 3</option>
+        <optgroup label="zvire">
+            <option>Pes</option>
+            <option>Kocka</option>
+        </optgroup>
+        <optgroup label="veci">
+            <option>lampa</option>
+        </optgroup>
+    </select>
+
 
     <label>neco</label>
-    <input type="number" value="22">
+    <input type="number" value="22" max="10" min="0" step="2" disabled>
 
     <label for="chackbox1">nejsem robot</label>
     <input type="checkbox" id="chackbox1">
 
     <br>
     <label for="radio1">ano</label>
-    <input type="radio" id="radio1">
+    <input type="radio" name="volba" value="ano" id="radio1">
     <br>
     <label for="radio2">ne</label>
-    <input type="radio" id="radio2">
+    <input type="radio" name="volba" value="ne" id="radio2">
     <br>
+    <input type="color">
+
 
     <input type="submit" value="text odeslani">
     <button>Poslat</button>
